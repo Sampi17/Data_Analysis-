@@ -1,0 +1,16 @@
+PIZZA SALES PROJECT IN EXCEL
+
+1. Extract Transform and Load (ETL)
+  •	Connected SQL server to excel in order to transfer the data through a server.
+
+2. Data Cleaning
+  •	Used different techniques to clean the data so it’s ready for analysis
+
+3. Data processing
+  •	Created a new column to represent the order_day  from order_date so the data is in weekly names and not numeric dates.
+
+4. Data Analysis
+  •	Used pivot tables and formulas to calculate Key performance indicators  and prepared data for charts.
+
+5.Data Visualizations
+  •	Compiled an interactive dashboard to present my insights to stakeholders.
