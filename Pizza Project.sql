@@ -83,12 +83,15 @@ ORDER BY DATENAME(MONTH, order_date) DESC
 
 4--Percentage of sales per category
 
-SELECT  pizza_category,ROUND(SUM(total_price),2) AS Total_revenue, ROUND(SUM(total_price)*100 
-/ (SELECT SUM(total_price) FROM pizza_sales),2) AS pct_sales
+SELECT
+  pizza_category,
+  ROUND(SUM(total_price), 2) AS Total_revenue,
+  ROUND(SUM(total_price) * 100 / (SELECT SUM(total_price) FROM pizza_sales), 2) AS pct_sales
+FROM
+  pizza_sales
+GROUP BY
+  pizza_category;
 
-FROM pizza_sales
-
-GROUP BY pizza_category
 
 
 5--Percentage of sales by pizza size
